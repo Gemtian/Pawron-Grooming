@@ -11,18 +11,47 @@
       font-family: 'Arial', sans-serif;
       background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: start;
+      overflow: hidden;
+      position: relative;
       height: 100vh;
       color: white;
       text-align: center;
     }
 
+    .soap-bubbles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .bubble {
+      position: absolute;
+      bottom: -100px;
+      width: 60px;
+      opacity: 0.8;
+      animation: rise 20s infinite ease-in;
+    }
+
+    @keyframes rise {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.7;
+      }
+      100% {
+        transform: translateY(-110vh) scale(1.2);
+        opacity: 0;
+      }
+    }
+
     .logo {
       max-width: 300px;
       margin-top: 30px;
+      position: relative;
+      z-index: 1;
     }
 
     .contact {
@@ -31,6 +60,8 @@
       font-weight: bold;
       color: #fff;
       text-shadow: 1px 1px 4px black;
+      position: relative;
+      z-index: 1;
     }
 
     .social-icons {
@@ -38,6 +69,8 @@
       gap: 30px;
       margin-top: 30px;
       justify-content: center;
+      position: relative;
+      z-index: 1;
     }
 
     .social-icons a img {
@@ -55,23 +88,36 @@
   </style>
 </head>
 <body>
+
+  <!-- Burbujas -->
+  <div class="soap-bubbles">
+    <img src="bubble1.png" class="bubble" style="left: 10%; animation-duration: 12s;">
+    <img src="bubble2.png" class="bubble" style="left: 30%; animation-duration: 17s;">
+    <img src="bubble3.png" class="bubble" style="left: 50%; animation-duration: 15s;">
+    <img src="bubble1.png" class="bubble" style="left: 70%; animation-duration: 20s;">
+  </div>
+
+  <!-- Logo -->
   <img src="Logo.png" alt="Pawron Grooming Logo" class="logo" />
 
+  <!-- Contacto -->
   <div class="contact">
     📞 (305) 123-4567<br/>
     📧 info@pawrongrooming.com
   </div>
 
+  <!-- Íconos Sociales -->
   <div class="social-icons">
-    <a href="https://www.instagram.com/pawron_grooming/?utm_source=ig_web_button_share_sheet/" target="_blank">
+    <a href="https://www.instagram.com/pawron_grooming/" target="_blank">
       <img src="instagram-icon.png" alt="Instagram" />
     </a>
-    <a href="https://www.tiktok.com/" target="_blank">
+    <a href="https://www.tiktok.com/@pawrongrooming" target="_blank">
       <img src="tiktok-icon.png" alt="TikTok" />
     </a>
-    <a href="https://www.facebook.com/" target="_blank">
+    <a href="https://www.facebook.com/profile.php?id=61572508054764" target="_blank">
       <img src="facebook-icon.png" alt="Facebook" />
     </a>
   </div>
+
 </body>
 </html>
