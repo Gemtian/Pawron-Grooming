@@ -1,129 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ricky Barber Shop</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background: url('fondo-ricky.png') no-repeat center center fixed;
-      background-size: cover;
-      text-align: center;
-      color: white;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawron Grooming</title>
+    <style>
+        body {
+            font-family: Gotham, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
-      gap: 18px; /* controla separación entre secciones */
-      padding-top: 20px;
-    }
+        .container {
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+            padding: 40px;
+            border-radius: 35px;
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+            background-image: url('Fondo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
 
-    .logo {
-      width: 90%;
-      max-width: 500px;
-    }
+        .logo {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
 
-    .slogan {
-      width: 85%;
-      max-width: 600px;
-    }
+        .contact-info {
+            color: white;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
 
-    .social-icons {
-      display: flex;
-      gap: 25px;
-      justify-content: center;
-      margin-top: 10px;
-    }
+        .link {
+            display: block;
+            text-decoration: none;
+            background: #022171;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+            transition: background 0.6s;
+            font-size: 18px;
+        }
 
-    .social-icons a img {
-      width: 85px;
-      height: 85px;
-      border-radius: 50%;
-      object-fit: cover;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-    }
+        .link:hover {
+            background: #0075ff;
+        }
 
-    .social-icons a img:hover {
-      transform: scale(1.2);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-    }
+        .social-icons img {
+            width: 40px;
+            margin: 5px;
+            transform: scale(0.8);
+            transition: transform 0.2s;
+        }
 
-    .click {
-      width: 70%;
-      max-width: 600px;
-      margin-top: 5px;
-    }
-
-    .phone {
-      width: 80%;
-      max-width: 500px;
-      margin-top: 5px;
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-
-    .crown {
-      width: 95%;
-      max-width: 700px;
-      margin-top: 10px;
-    }
-
-    .slogan-bottom {
-      width: 75%;
-      max-width: 600px;
-      margin-top: 5px;
-    }
-  </style>
+        .social-icons img:hover {
+            transform: scale(1.5);
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
+    <div class="container">
+        <img src="Logo.png" alt="Logo" class="logo">
 
-    <!-- Logo -->
-    <img src="logo.png" alt="Ricky Barber Shop Logo" class="logo">
+        <div class="contact-info">
+            <p>pawrongrooming@gmail.com</p>
+            <p>(786) 931-8665</p>
+        </div>
 
-    <!-- Primer slogan -->
-    <img src="slogan_v.png" alt="Tu mejor versión empieza con nosotros" class="slogan">
+        <a href="https://www.tiktok.com/@pawrongrooming?lang=en" target="_blank" class="link">TikTok</a>
+        <a href="https://www.instagram.com/pawron_grooming/?utm_source=ig_web_button_share_sheet" target="_blank" class="link">Instagram</a>
+        <a href="https://www.facebook.com/share/12Kr9TPMhyr/?mibextid=wwXIfr" target="_blank" class="link">Facebook</a>
 
-    <!-- Iconos sociales -->
-    <div class="social-icons">
-      <a href="https://www.instagram.com/rickybarbershop123" target="_blank">
-        <img src="icon-instagram.png" alt="Instagram">
-      </a>
-      <a href="https://maps.app.goo.gl/yrjqjNacwAgakBK86" target="_blank">
-        <img src="icon-google.png" alt="Google Maps">
-      </a>
-      <a href="https://www.tiktok.com/@rickybarber89" target="_blank">
-        <img src="icon-tiktok.png" alt="TikTok">
-      </a>
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/@pawrongrooming?lang=en" target="_blank">
+                <img src="tiktok-icon.png" alt="TikTok">
+            </a>
+            <a href="https://www.instagram.com/pawron_grooming/?utm_source=ig_web_button_share_sheet" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/share/12Kr9TPMhyr/?mibextid=wwXIfr" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook">
+            </a>
+        </div>
     </div>
-
-    <!-- Has click -->
-    <img src="click.png" alt="Has click y síguenos" class="click">
-
-    <!-- Teléfono -->
-    <a href="tel:+17862861650">
-      <img src="phone_ricky.png" alt="786-286-1650" class="phone">
-    </a>
-
-    <!-- Decoración -->
-    <img src="crown_ricky.png" alt="Decoración" class="crown">
-
-    <!-- Segundo slogan -->
-    <img src="slogan_p.png" alt="Precisión que distingue" class="slogan-bottom">
-
-  </div>
 </body>
 </html>
+
+
+
+
+
