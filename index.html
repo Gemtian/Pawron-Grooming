@@ -1,103 +1,50 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pawron Grooming</title>
-    <style>
-        body {
-            font-family: Gotham, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .container {
-            width: 80%;
-            max-width: 400px;
-            text-align: center;
-            padding: 40px;
-            border-radius: 35px;
-            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
-            background-image: url('Fondo.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        .logo {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-        }
-
-        .contact-info {
-            color: white;
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-
-        .link {
-            display: block;
-            text-decoration: none;
-            background: #022171;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 10px;
-            margin: 10px 0;
-            transition: background 0.6s;
-            font-size: 18px;
-        }
-
-        .link:hover {
-            background: #0075ff;
-        }
-
-        .social-icons img {
-            width: 40px;
-            margin: 5px;
-            transform: scale(0.8);
-            transition: transform 0.2s;
-        }
-
-        .social-icons img:hover {
-            transform: scale(1.5);
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <img src="Logo.png" alt="Logo" class="logo">
-
-        <div class="contact-info">
-            <p>pawrongrooming@gmail.com</p>
-            <p>(786) 931-8665</p>
-        </div>
-
-        <a href="https://www.tiktok.com/@pawrongrooming?lang=en" target="_blank" class="link">TikTok</a>
-        <a href="https://www.instagram.com/pawron_grooming/?utm_source=ig_web_button_share_sheet" target="_blank" class="link">Instagram</a>
-        <a href="https://www.facebook.com/share/12Kr9TPMhyr/?mibextid=wwXIfr" target="_blank" class="link">Facebook</a>
-
-        <div class="social-icons">
-            <a href="https://www.tiktok.com/@pawrongrooming?lang=en" target="_blank">
-                <img src="tiktok-icon.png" alt="TikTok">
-            </a>
-            <a href="https://www.instagram.com/pawron_grooming/?utm_source=ig_web_button_share_sheet" target="_blank">
-                <img src="instagram-icon.png" alt="Instagram">
-            </a>
-            <a href="https://www.facebook.com/share/12Kr9TPMhyr/?mibextid=wwXIfr" target="_blank">
-                <img src="facebook-icon.png" alt="Facebook">
-            </a>
-        </div>
-    </div>
-</body>
-</html>
-
-
-
-
-
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <title>Pawron Grooming Redirect</title> 
+        <style> 
+            body { 
+                margin: 0; 
+                padding: 0; 
+                font-family: 'Arial', sans-serif; 
+                background: url('background.jpg') no-repeat center center fixed; 
+                background-size: cover; 
+                overflow: hidden; 
+                position: relative; 
+                height: 100vh; 
+                color: white; 
+                text-align: center;
+            } 
+            
+            .soap-bubbles { 
+                position: absolute; 
+                top: 0; 
+                left: 0; 
+                width: 100%; 
+                height: 100%; 
+                overflow: hidden; 
+                z-index: 0; 
+            } 
+            .bubble { 
+                position: absolute; 
+                bottom: -100px; 
+                width: 60px; 
+                opacity: 0.8; 
+                animation: rise 20s infinite ease-in; 
+            } 
+            
+            @keyframes rise { 
+                0% { 
+                    transform: translateY(0) scale(1);
+                    opacity: 0.7;  
+            } 100% { 
+                transform: translateY(-110vh) scale(1.2); opacity: 0; 
+                } 
+            } 
+            
+            .logo {
+                max-width: 300px; 
+                margin-top: 30px; position: relative;
+                z-index: 1; } .contact { margin-top: 20px; font-weight: bold; color: #ffffff; text-shadow: 1px 1px 4px black; position: relative; z-index: 1; } .phone { font-size: 36px; /* Tamaño del número de teléfono */ } .email { font-size: 26px; /* Tamaño del email */ } .social-icons { display: flex; gap: 30px; margin-top: 30px; justify-content: center; position: relative; z-index: 1; } .social-icons a img { width: 65px; height: 65px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.4); transition: transform 0.4s ease, box-shadow 0.4s ease; } .social-icons a img:hover { transform: translateY(-10px) scale(1.1); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); } </style> </head> <body> <!-- Burbujas --> <div class="soap-bubbles"> <img src="bubble1.png" class="bubble" style="left: 10%; animation-duration: 12s;"> <img src="bubble2.png" class="bubble" style="left: 30%; animation-duration: 17s;"> <img src="bubble3.png" class="bubble" style="left: 50%; animation-duration: 15s;"> <img src="bubble1.png" class="bubble" style="left: 70%; animation-duration: 20s;"> </div> <!-- Logo --> <img src="Logo.png" alt="Pawron Grooming Logo" class="logo" /> <!-- Contacto --> <div class="contact"> <div class="phone">📞 786.931.8665</div> <div class="email">pawrongrooming@gmail.com</div> </div> <!-- Íconos Sociales --> <div class="social-icons"> <a href="https://www.instagram.com/pawron_grooming/" target="_blank"> <img src="instagram-icon.png" alt="Instagram" /> </a> <a href="https://www.tiktok.com/@pawrongrooming?_t=ZT-8w1x15iWWiZ&_r=1" target="_blank"> <img src="tiktok-icon.png" alt="TikTok" /> </a> <a href="https://www.facebook.com/profile.php?id=61572508054764" target="_blank"> <img src="facebook-icon.png" alt="Facebook" /> </a> </div> </body> </html>.
